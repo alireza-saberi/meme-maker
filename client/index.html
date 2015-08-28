@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,10 +18,41 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body data-ng-app="memeMaker">
+    <div class="container-fluid" ng-controller="footerController">
+      <div class="row">
+        <div class="col-xs-12 nav bav-bar">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu</p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu</p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu</p>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-xs-12">
+             <hr class="violet-color">
+             <footer data-ng-controller="footerController">
+                <p class="text-uppercase text-center">Made with <i class="fa fa-heart violet-color"></i> by <span class="violet-color">Alan Saberi</span>. Find this on <a href="https://github.com/alireza-saberi/meme-maker" target="_blank"> <i class="fa fa-github violet-color"></i></a></p>
+                <p class="text-center">Version: {{ version }}&nbsp; Social media!</p>
+                <p class="text-center"> <a>English</a>, <a>French</a>, <a>Spanish</a></p>
+
+             </footer>
+          </div>
+      </div>
+    </div>
 
     <script src="js/angular.min.js"></script>
     <script src="js/angular-translate.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/footerController.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
