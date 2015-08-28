@@ -2,7 +2,7 @@
 	var app = angular.module('memeMaker', []);
 	app.constant('appSettings', {
 		title: 'Meme Maker',
-		version: '0.1.2',
+		version: '0.1.3',
 
 	});
 
