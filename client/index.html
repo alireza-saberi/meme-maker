@@ -19,6 +19,15 @@
     <![endif]-->
   </head>
   <body data-ng-app="memeMaker">
+<div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=853770171379853";
+        fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));
+    </script>
     <div class="container-fluid" ng-controller="footerController">
         <div class="nav navbar navbar-fixed-top navbar-inverse">
           <div class="container-fluid">
@@ -176,7 +185,25 @@
              <br>
              <footer data-ng-controller="footerController">
                 <p class="text-uppercase text-center">Made with <i class="fa fa-heart violet-color"></i> by <span class="violet-color">Alan Saberi</span>. Find this on <a href="https://github.com/alireza-saberi/meme-maker" target="_blank"> <i class="fa fa-github violet-color"></i></a></p>
-                <p class="text-center">Version: {{ version }}&nbsp; Social media!</p>
+                <p class="text-center">Version: {{ version }}&nbsp; 
+                    <!-- Tweeter -->
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="<script src=&quot;//platform.linkedin.com/in.js&quot; type=&quot;text/javascript&quot;> lang: en_US</script> <script type=&quot;IN/Share&quot; data-url=&quot;http://127.0.0.1:3000/&quot; data-counter=&quot;right&quot;></script>" data-text="This my the my new meme" data-via="a_saberi" data-hashtags="memeMake">Tweet</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
+                    <!-- linkedIn -->
+                    &nbsp;
+                    <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+                    <script type="IN/Share" data-url="http://127.0.0.1:3000/" data-counter="right"></script>
+                    &nbsp;
+                      <!-- Place this tag in your head or just before your close body tag. -->
+                      <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+                      <!-- Place this tag where you want the share button to render. -->
+                      <span class="g-plus" data-action="share" data-annotation="bubble" data-href="http://127.0.0.1:3000/"></span>
+                    <!-- facebook -->
+                    &nbsp;
+                    <span class="fb-share-button" data-href="http://127.0.0.1:3000/" data-layout="button_count"></span>
+
+                </p>
                 <p class="text-center">
                   <a class="ng-scope" data-ng-click="changeLanguage('en')">English</a>,
                   <a class="ng-scope" data-ng-click="changeLanguage('fr')">French</a>,
